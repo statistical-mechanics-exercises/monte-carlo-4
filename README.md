@@ -14,7 +14,7 @@ To get you started I have duplicated the function, area, that I gave you in the 
 
 Computing this variance is important as this quantity appears in the expression that we derive from the central limit theorem for the error bar.  This expression is:
 
-![](https://render.githubusercontent.com/render/math?math=\epsilon=\sqrt{\frac{S^2}{N}}\Phi^{-1}\left(\frac{p_c+1}{2}\right)
+![](https://render.githubusercontent.com/render/math?math=\epsilon=\sqrt{\frac{S^2}{N}}\Phi^{-1}\left(\frac{p_c+1}{2}\right))
 
 In this expression, ![](https://render.githubusercontent.com/render/math?math=p_c) gives the probability that a new estimate for the mean will fall between the mean - ![](https://render.githubusercontent.com/render/math?math=\epsilon) and the mean + ![](https://render.githubusercontent.com/render/math?math=\epsilon).  Just as in the previous exercise the error bar is thus telling us something about a range that the data has a certain probability of falling into.
 
