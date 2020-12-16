@@ -14,8 +14,8 @@ class UnitTests(unittest.TestCase) :
            var = ( 100 / 99 )*(mean - mean*mean) 
            resamples[j] = np.sqrt( var /100 )*st.norm.ppf( (0.95 + 1) / 2 )
   
-           est, bar = area(100) 
-           self.assertTrue( bar>np.percentile(resamples,5) and bar<np.percentile(resamples,95), "Error bars are not within range for resampled errors" )
+        est, bar = area(100) 
+        self.assertTrue( bar>np.percentile(resamples,5) and bar<np.percentile(resamples,95), "Error bars are not within range for resampled errors" )
            
     def test_average(self) :
         mean, bar = np.pi/4, np.sqrt( (np.pi/4)*(1-(np.pi/4)) / 100 )*st.norm.ppf( (0.99 + 1) / 2 )
