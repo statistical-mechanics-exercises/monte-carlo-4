@@ -7,6 +7,8 @@ def area(N) :
     x = np.random.uniform(0,1)
     y = np.random.uniform(0,1)
     if x*x + y*y < 1 : nin = nin + 1
-  return nin / N
+  est = nin / N
+  var = (N/(N-1))*(nin/N - est*est)
+  return est, np.sqrt( var / N )*st.norm.ppf( (0.95+1) / 2 )
   
 print( area(1000) )
